@@ -27,3 +27,6 @@ This project aims to develop a machine learning model to classify emails and SMS
 
 Contributions to this project are welcome! Whether it's improving the model's accuracy, enhancing the user interface, or adding new features, feel free to fork the repository and submit pull requests.
 
+## Note 
+Website is currently facing a "backend error." Please use the localhost system for access.
+
