@@ -17,16 +17,37 @@ def transform_text(text):
     # Tokenize text
     text = nltk.word_tokenize(text)
 
-    # Remove non-alphanumeric characters
-    text = [i for i in text if i.isalnum()]
+    y=[]
+    for i in text:
+        if i.isalnum():
+            y.append(i)
+    
+    text = y[:]
+    y.clear()
+    
+    for i in text:
+        if i not in stopwords.words('english') and i not in string.punctuation:
+            y.append(i)
+    
+    text = y[:]
+    y.clear()
+    
+    for i in text:
+        y.append(ps.stem(i))
+    
+    return " ".join(y)
+    
+    
+    # # Remove non-alphanumeric characters
+    # text = [i for i in text if i.isalnum()]
 
-    # Remove stopwords and punctuation
-    text = [i for i in text if i not in stopwords.words('english') and i not in string.punctuation]
+    # # Remove stopwords and punctuation
+    # text = [i for i in text if i not in stopwords.words('english') and i not in string.punctuation]
 
-    # Perform stemming
-    text = [ps.stem(i) for i in text]
+    # # Perform stemming
+    # text = [ps.stem(i) for i in text]
 
-    return " ".join(text)
+    # return " ".join(text)
 
 # Load the TF-IDF vectorizer and the classification model
 tfidf = pickle.load(open(r'nclassifier\vectorizer.pkl', 'rb'))
