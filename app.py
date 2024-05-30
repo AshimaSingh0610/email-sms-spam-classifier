@@ -1,8 +1,8 @@
 import streamlit as st
 import pickle
 import string
-import nltk
 from nltk.corpus import stopwords
+import nltk
 from nltk.stem.porter import PorterStemmer
 
 # Download necessary NLTK data files
@@ -28,10 +28,9 @@ def transform_text(text):
 
     return " ".join(text)
 
-tfidf_path = "email-sms-spam-classifier/vectorizer.pkl"
-model_path = "email-sms-spam-classifier/model.pkl"
-tfidf = pickle.load(open(tfidf_path, 'rb'))
-model = pickle.load(open(model_path, 'rb'))
+# Load the TF-IDF vectorizer and the classification model
+tfidf = pickle.load(open(r'email-sms-spam-classifier\vectorizer.pkl', 'rb'))
+model = pickle.load(open(r'email-sms-spam-classifier\model.pkl', 'rb'))
 
 # Streamlit UI
 st.title("Email/SMS Spam Classifier")
