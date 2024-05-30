@@ -29,8 +29,8 @@ def transform_text(text):
     return " ".join(text)
 
 # Load the TF-IDF vectorizer and the classification model
-tfidf = pickle.load(open(r'email-sms-spam-classifier\vectorizer.pkl', 'rb'))
-model = pickle.load(open(r'email-sms-spam-classifier\model.pkl', 'rb'))
+tfidf = pickle.load(open(r'nclassifier\vectorizer.pkl', 'rb'))
+model = pickle.load(open(r'nclassifier\model.pkl', 'rb'))
 
 # Streamlit UI
 st.title("Email/SMS Spam Classifier")
