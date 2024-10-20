@@ -125,11 +125,7 @@ Below is the software design for the Email & SMS Spam Classifier project:
 
 ---
 
-## 💬 **Feedback and Suggestions**
 
-We welcome your feedback on additional features you would like to see! Please share your ideas in the [Issues section](https://github.com/AshimaSingh0610/email-sms-spam-classifier/issues) of the repository.
-
----
 ## 🙌 **Contributing**
 
 We love contributions! Help us make this repository even better by contributing to the project. Your input is highly valued. 🤗
