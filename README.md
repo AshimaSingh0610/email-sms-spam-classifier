@@ -101,7 +101,9 @@ Open your web browser and go to http://localhost:8501/ to access the Email & SMS
 
 Below is the software design for the Email & SMS Spam Classifier project:
 
-![Software Design]()
+![Software Design II](https://github.com/user-attachments/assets/d5bf8d8c-5100-48a9-b816-097d04eeffe5)
+![Software Design ](https://github.com/user-attachments/assets/f4cd7dad-7554-47c7-9cf7-f45c06ba9939)
+
 
 ---
 
